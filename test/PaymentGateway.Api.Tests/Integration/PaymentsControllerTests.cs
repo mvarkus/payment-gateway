@@ -133,7 +133,7 @@ public class PaymentsControllerTests
 
                 services.Configure<MountebankOption>(opts =>
                 {
-                    opts.BaseAddress = Environment.GetEnvironmentVariable("TEST_BANK_BASE_ADDRESS")
+                    opts.BaseAddress = Environment.GetEnvironmentVariable("TEST_ACQUIRING_BANK_BASE_ADDRESS")
                         ?? "http://localhost:8080";
                     opts.TimeoutInSeconds = 30;
                 });
