@@ -1,7 +1,7 @@
 # Payment Gateway API
 Payment Gateway API is responsible for validating requests, storing card information and forwarding payment requests and accepting payment responses to and from the acquiring bank.
 
-## How to run
+## How to Run
 
 ### API
 1. Navigate to the project folder.
@@ -13,7 +13,7 @@ docker compose up -d
 ```console
 dotnet run --launch-profile PaymentGateway.Api --project .\src\PaymentGateway.Api\PaymentGateway.Api.csproj
 ```
-The project should run on https://localhost:7092 and http://localhost:5067
+The project should run on https://localhost:7092 and http://localhost:5067.
 
 ### Tests
 1. Navigate to the project folder.
@@ -25,6 +25,10 @@ docker compose up -d
 ```console
 dotnet test .\test\PaymentGateway.Api.Tests\PaymentGateway.Api.Tests.csproj
 ```
+## API Specification
+To access the API specification run the project and open any of the following links:
+* https://localhost:7092/swagger/index.html
+* http://localhost:5067/swagger/index.html
 
 ## Key Design Considerations
 
